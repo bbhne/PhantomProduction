@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+	<!-- Strutsの詳細設定 -->
+	<struts>
+		<constant name="struts.devMode" value="false"/>
+
+	<!-- 対象のpackageを設定 -->
+	<package name="ec.phantom.store.action" extends="struts-default">
+
+	<!-- GoHomeAction -->
+	<action name="GoHomeAction" class="ec.phantom.store.action.GoHomeAction"
+	method="execute">
+	<result name="success">index.jsp</result>
+	</action>
+
+	<!-- HomeAction -->
+	<action name="HomeAction" class="ec.phantom.store.action.HomeAction"
+	method="execute">
+	<result name="login">login.jsp</result>
+	<result name="success">buyItem.jsp</result>
+	</action>
+
+	<!-- MyPageAction -->
+	<action name="MyPageAction" class="ec.phantom.store.action.MyPageAction"
+	method="execute">
+	<result name="success">myPage.jsp</result>
+	<result name="error">error.jsp</result>
+	</action>
+
+	<!-- LoginFormAction -->
+	<action name="LoginFormAction" class="ec.phantom.store.action.LoginFormAction"
+	method="execute">
+	<result name="success">login.jsp</result>
+	</action>
+
+	<!-- LoginAction -->
+	<action name="LoginAction" class="ec.phantom.store.action.LoginAction"
+	method="execute">
+	<result name="success">index.jsp</result>
+	<result name="error">login.jsp</result>
+	</action>
+
+	<!-- LogoutAction -->
+	<action name="LogoutAction" class="ec.phantom.store.action.LogoutAction"
+	method="execute">
+	<result name="success">index.jsp</result>
+	</action>
+
+	<!-- UserCreateAction -->
+	<action name="UserCreateAction" class="ec.phantom.store.action.UserCreateAction"
+	method="execute">
+	<result name="success">userCreate.jsp</result>
+	<result name="back">login.jsp</result>
+	</action>
+
+	<!-- UserCreateConfirm -->
+	<action name="UserCreateConfirm" class="ec.phantom.store.action.UserCreateConfirm"
+	method="execute">
+	<result name="success">userCreateConfirm.jsp</result>
+	<result name="error">userCreate.jsp</result>
+	</action>
+
+	<!-- UserCreateCompleteAction -->
+	<action name="UserCreateCompleteAction" class="ec.phantom.store.action.UserCreateCompleteAction"
+	method="execute">
+	<result name="success">userCreateComplete.jsp</result>
+	</action>
+
+	<!-- InquiryAction -->
+	<action name="InquiryAction" class="ec.phantom.store.action.InquiryAction"
+	method="execute">
+	<result name="success">inquiry.jsp</result>
+	</action>
+
+	<!-- InquiryCompleteAction -->
+	<action name="InquiryCompleteAction" class="ec.phantom.store.action.InquiryCompleteAction"
+	method="execute">
+	<result name="success">inquiryComplete.jsp</result>
+	<result name="error">inquiry.jsp</result>
+	</action>
+
+
+	<!-- BuyItemListAction -->
+	<action name="BuyItemListAction" class="ec.phantom.store.action.BuyItemListAction"
+	method="execute">
+	<result name="success">buyItemList.jsp</result>
+	</action>
+
+	<!-- SearchAction -->
+	<action name="SearchAction" class="ec.phantom.store.action.SearchAction"
+	method="execute">
+	<result name="success">buyItemList.jsp</result>
+	</action>
+
+	<!-- GoBuyItemAction -->
+	<action name="GoBuyItemAction" class="ec.phantom.store.action.GoBuyItemAction"
+	method="execute">
+	<result name="success">buyItem.jsp</result>
+	</action>
+
+	<!-- BuyItemAction -->
+	<action name="BuyItemAction" class="ec.phantom.store.action.BuyItemAction"
+	method="execute">
+	<result name="success">buyItemConfirm.jsp</result>
+	<result name="error">buyItem.jsp</result>
+	</action>
+
+	<!-- BuyItemConfirmAction -->
+	<action name="BuyItemConfirmAction" class="ec.phantom.store.action.BuyItemConfirmAction"
+	method="execute">
+	<result name="success">buyItemComplete.jsp</result>
+	<result name="error">buyItem.jsp</result>
+	</action>
+
+	<!-- BuyItemCompleteAction -->
+	<action name="BuyItemCompleteAction" class="ec.phantom.store.action.BuyItemCompleteAction"
+	method="execute">
+	<result name="success">index.jsp</result>
+	</action>
+
+	<!-- BuyItemDetailAction -->
+	<action name="BuyItemDetailAction" class="ec.phantom.store.action.BuyItemDetailAction"
+	method="execute">
+	<result name="success">buyItem.jsp</result>
+	<result name="error">buyItemList.jsp</result>
+	</action>
+
+	<!-- AdminLoginAction -->
+	<action name="AdminLoginAction" class="ec.phantom.store.action.AdminLoginAction"
+	method="execute">
+	<result name="success">zahuraMasterHome.jsp</result>
+	<result name="error">admin_login.jsp</result>
+	</action>
+
+	<!-- InquiryInfo -->
+	<action name="InquiryInfo" class="ec.phantom.store.action.InquiryInfo"
+	method="execute">
+	<result name="success">zahuraInquiryInfo.jsp</result>
+	</action>
+
+
+	</package>
+
+	</struts>

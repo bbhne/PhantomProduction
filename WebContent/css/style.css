@@ -1,0 +1,183 @@
+
+body {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	color:#5a5a5a;
+	margin:0;
+	padding:0;
+	min-height:100%;
+	min-width:100%;
+	background-color:#ffffff;
+}
+
+			img {
+				border:0;
+				margin:0;
+				padding:0;
+			}
+
+			br {
+				user-select:none;
+			}
+
+	a:link {
+	color:#5a5a5a;
+	text-decoration:none;
+	}
+	a:visited {
+	color:#5a5a5a;
+	text-decoration:none;
+	}
+	a:hover {
+	color:#0fb9e5;
+	text-decoration:none;
+	}
+	a:active {
+	color:#52ffd0;
+	text-decoration:none;
+	}
+
+#header {
+	height:80px;
+	width:100%;
+	background-color:#ffffff;
+	border-bottom:30px solid #000000;
+	margin:0;
+	padding:0;
+}
+
+#header ul {
+	float:right;
+	list-style:none;
+	margin-right:4em;
+	margin-bottom:0;
+	line-height:80px;
+}
+
+#header ul li {
+	float:left;
+	font-size:18px;
+	padding-right:1em;
+}
+
+#pan {
+	margin-top:-20px;
+}
+
+#main {
+width:100%;
+}
+
+	#menu {
+		float:left;
+		width:20%;
+		background-color:#ffffff;
+
+	}
+
+	.menu {
+		float:left;
+		max-height:100%;
+		width:100%;
+		background-color:#000000;
+		text-align:center;
+		color:#ffffff;
+	}
+	.menu a {
+		display:inline-block;
+		height:30px;
+		border-bottom:1px dotted #5a5a5a;
+	}
+
+	.menu h1 {
+		font-size:16px;
+	}
+
+
+	#content {
+		float:left;
+		width:80%;
+		background-color:#ffffff;
+		text-align:center;
+	}
+			#content img {
+			display:inline-block;
+			margin-left:auto;
+			margin-right:auto;
+		}
+
+			#pick {
+			float:left;
+			width:100%;
+			background-color:#ffffff;
+			}
+
+				#pick img {
+					display:block;
+					margin-left:auto;
+					margin-right:auto;
+				}
+
+					#sita {
+						float:left;
+						width:100%;
+						height:;
+						background-color:#000000;
+						color:#ffffff;
+					}
+
+					#sita img {
+						float:left;
+						margin:1em;
+					}
+
+					#sita h1 {
+						font-size:16px;
+						margin:0;
+						padding:0;
+					}
+
+					.right {
+						float:right;
+						margin-right:1em;
+					}
+
+					#sita ul {
+						float:left;
+						list-style:none;
+						background-color:;
+						margin-right:3em;
+					}
+
+					#sita ul li {
+						float:;
+						font-size:18px;
+					}
+
+
+	#sita a:link {
+	color:#ffffff;
+	text-decoration:none;
+	}
+	#sita a:visited {
+	color:#ffffff;
+	text-decoration:none;
+	}
+	#sita a:hover {
+	color:#0fb9e5;
+	text-decoration:none;
+	}
+	#sita a:active {
+	color:#52ffd0;
+	text-decoration:none;
+	}
+
+
+
+#footer {
+	clear:both;
+	min-height:80%;
+	text-align:center;
+	background-color:#000000;
+	color:#797979;
+	border-top:1px solid #797979;
+}
