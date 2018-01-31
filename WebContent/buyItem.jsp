@@ -73,6 +73,7 @@
 			<td><s:property value="session.buyItem_price"/>円</td>
 			<s:hidden name="buyItem_price" value="%{#session.buyItem_price}"/>
 			</tr>
+
 				<tr>
 				<td>購入個数</td>
 				<td>

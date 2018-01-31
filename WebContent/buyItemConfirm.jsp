@@ -71,11 +71,13 @@
 		<td><s:property value="session.buyItem_name"/></td>
 		</tr>
 		<tr>
-		<td><s:property value="session.buyItem_image"/></td>
+		<td><img src='<s:property value="session.buyItem_image"/>'/></td>
 		</tr>
 			<tr>
-			<td><s:property value="session.total_price"/></td>
+		<!-- <td><s:property value="session.total_price"/>円</td> -->
+			<td><s:property value="session.buyItem_price"/>円</td>
 			</tr>
+
 				<tr>
 				<td>購入個数</td>
 				<td>

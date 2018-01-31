@@ -33,6 +33,10 @@ public class MyPageDAO {
 				+ "WHERE user_buy_item_transaction.item_transaction_id = ? "
 				+ "AND user_buy_item_transaction.account_id = ?";
 
+		System.out.println("MyPageDAO--------------");
+		System.out.println(item_transaction_id);
+		System.out.println(account_id);
+
 		try {
 			PreparedStatement preparedStatement = connection.prepareStatement(sql);
 			preparedStatement.setString(1,item_transaction_id);
@@ -47,6 +51,14 @@ public class MyPageDAO {
 				dto.setTotalPrice(resultSet.getString("total_price"));
 				dto.setTotalCount(resultSet.getString("total_count"));
 				dto.setPayment(resultSet.getString("pay"));
+
+				System.out.println(dto.getItemNumber());
+				System.out.println(dto.getItemName());
+				System.out.println(dto.getTotalPrice());
+				System.out.println(dto.getTotalCount());
+				System.out.println(dto.getPayment());
+				System.out.println("-----------------------");
+
 				myPageDTO.add(dto);
 			}
 		}catch(Exception e) {

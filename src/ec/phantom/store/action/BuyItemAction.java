@@ -52,6 +52,21 @@ public class BuyItemAction extends ActionSupport implements SessionAware {
 		session.put("buyItem_name", buyItem_name);
 		session.put("buyItem_price", buyItem_price);
 
+		System.out.println("BuyItemAction--------------");
+//		session.put("buyItem_name", itemName);
+//		session.put("buyItem_image", itemImage);
+//		session.put("buyItem_price", itemPrice);
+
+		//		System.out.println(itemPrice);
+//		System.out.println(itemName);
+//System.out.println(itemImage);
+
+		System.out.println("名前："+session.get("buyItem_name"));
+		System.out.println("画像："+session.get("buyItem_image"));
+		System.out.println("値段："+session.get("buyItem_price"));
+
+
+
 		session.put("count", count);
 
 		int intCount = Integer.parseInt(session.get("count").toString());
