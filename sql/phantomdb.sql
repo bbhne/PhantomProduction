@@ -79,7 +79,7 @@ create table inquiry_table(
 	body varchar(255)
 );
 
-drop table if exists search_type_table;;
+drop table if exists search_type_table;
 
 create table search_type_table(
 	item_type varchar(255),
